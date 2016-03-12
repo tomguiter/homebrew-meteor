@@ -18,7 +18,7 @@ class Meteor < Formula
     end
 
     system "tar xvfz meteor-bootstrap-os.osx.x86_64.tar.gz" unless build.head?
-    system "mv .meteor meteor" unless build.head?
+    system "mv -v .meteor meteor" unless build.head?
 
     system "./scripts/generate-dev-bundle.sh" if build.head?
 
